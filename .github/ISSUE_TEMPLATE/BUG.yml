@@ -40,23 +40,11 @@ body:
     attributes:
       label: Version
       description: >-
-        Please provide the MAA version. Can be found in MAA -> Settings -> Update. (Click to copy)
+        Please provide the resources version. Version mane is the toppest folder name.
       placeholder: |
         Resource Version:
-        UI Version:
+        patch Version:
         Core Version:
-    validations:
-      required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Log files
-      description: >-
-        **After closing the MAA, upload the `asst.log` and `gui.log` log file in the `debug` folder and**
-        **indicate the approximate point in time when the problem occurred.**
-
-        **Please drag and drop the full file in, not your own cuttings or copies;**
-        **compress it before uploading if too large.**
     validations:
       required: true
   - type: textarea
@@ -67,12 +55,6 @@ body:
         If available, add screenshots to help explain your problem,
         including but not limited to screenshots of MAA software,
         screenshots of game screens.
-
-        If the problem is **recognition related**, please help by providing
-        the **original image** taken by the emulator's own screenshot tool
-        (or via adb).
-
-        Screenshots taken with other tools may contain the frames of the window/emulator, which makes it harder for us to debug.
 
         The `debug` folder has some automatic screenshots of the error images,
         if you have any,
@@ -85,7 +67,7 @@ body:
     attributes:
       label: Anthing else?
       description: >-
-        Emulator used, operating system, related configuration, links,
+        patch used, operating system, related configuration, links,
         reference material, etc.
 
         Anything that will give us more insight into the problem
